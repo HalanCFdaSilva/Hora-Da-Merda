@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/paper">
+
+    <ImageView
+        android:id="@+id/calendario_activity_image_view_month_year"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/brown_500" />
+
+    <Button
+        android:id="@+id/calendario_activity_button_month_year"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/calendario_activity_image_view_month_year"
+        app:layout_constraintEnd_toStartOf="@+id/calendario_activity_button_month_front"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/calendario_activity_button_month_back"
+        app:layout_constraintTop_toTopOf="@+id/calendario_activity_image_view_month_year" />
+
+    <ImageButton
+        android:id="@+id/calendario_activity_button_month_back"
+        android:layout_width="61dp"
+        android:layout_height="0dp"
+        android:background="@color/brown_500"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="@+id/calendario_activity_image_view_month_year"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendario_activity_image_view_month_year"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/calendario_activity_button_month_front"
+        android:layout_width="61dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="156dp"
+        android:background="@color/brown_500"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:contextClickable="false"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/calendario_activity_image_view_month_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendario_activity_image_view_month_year"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/calendario_activity_table_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@color/paper"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendario_activity_image_view_month_year">
+
+        <TableRow
+            android:id="@+id/calendario_activity_table_row_semana_1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:isScrollContainer="true"
+            android:orientation="horizontal">
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendario_activity_table_row_semana_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="horizontal" />
+
+        <TableRow
+            android:id="@+id/calendario_activity_table_row_semana_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="horizontal">
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendario_activity_table_row_semana_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="horizontal">
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendario_activity_table_row_semana_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="horizontal">
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendario_activity_table_row_semana_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="horizontal">
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

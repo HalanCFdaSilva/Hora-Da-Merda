@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/cardview_dark_background" />
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_table"
+        android:layout_width="266dp"
+        android:layout_height="377dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_background"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_background"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_background"
+        app:layout_constraintTop_toTopOf="@+id/bristol_scale_pop_up_image_view_background"
+        app:layout_constraintVertical_bias="0.50"
+        app:srcCompat="@drawable/escala_de_bristol_fundo" />
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_title"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:text="Escala de Bristol"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toTopOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_2"
+        app:layout_constraintEnd_toStartOf="@+id/bristol_scale_pop_up_string_tipo_1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_title"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/bristol_stool_1" />
+
+
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TIPO 1"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Caroços duros e separados, como nozes (difícil de passar)"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_2"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintStart_toEndOf="@+id/bristol_scale_pop_up_string_tipo_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_title" />
+
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_3"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/bristol_stool_2" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TIPO 2"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_tipo_1"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:text="Forma de salsicha, mas granuloso"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_3"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_descrition_1" />
+
+
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_4"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_image_view_bristol_2"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/bristol_stool_3" />
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="TIPO 3"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_tipo_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Como uma salsicha, mas com fissuras em sua superfície"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_4"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_descrition_2" />
+
+
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_5"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_image_view_bristol_3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bristol_stool_4" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="TIPO 4"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_tipo_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Como uma salsicha ou serpente, suave e macio"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_5"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_descrition_3" />
+
+
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_6"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        app:layout_constraintEnd_toStartOf="@+id/bristol_scale_pop_up_string_tipo_5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_image_view_bristol_4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bristol_stool_5" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="TIPO 5"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_tipo_4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Bolhas suaves com bordas nítidas (que passa facilmente)"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_6"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_descrition_4" />
+
+
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_7"
+        app:layout_constraintEnd_toStartOf="@+id/bristol_scale_pop_up_string_tipo_1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_image_view_bristol_5"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/bristol_stool_6" />
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="TIPO 6"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_tipo_5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Peças fofas com bordas em pedaços"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bristol_scale_pop_up_string_tipo_7"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintStart_toEndOf="@+id/bristol_scale_pop_up_string_tipo_6"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_descrition_5" />
+
+
+
+    <ImageView
+        android:id="@+id/bristol_scale_pop_up_image_view_bristol_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_bristol_1"
+        app:layout_constraintEnd_toStartOf="@+id/bristol_scale_pop_up_string_tipo_1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_image_view_bristol_6"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/bristol_stool_7" />
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_tipo_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center_horizontal"
+        android:text="TIPO 7"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_tipo_6"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/bristol_scale_pop_up_string_descrition_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Aquoso, sem partes sólidas, inteiramente líquido"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bristol_scale_pop_up_image_view_table"
+        app:layout_constraintEnd_toEndOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintStart_toStartOf="@+id/bristol_scale_pop_up_string_descrition_1"
+        app:layout_constraintTop_toBottomOf="@+id/bristol_scale_pop_up_string_descrition_6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

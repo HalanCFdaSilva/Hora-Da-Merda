@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/paper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dados_dia_activity_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/dados_dia_activity_string_texto_total_vezes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/total_de_vezes_dia"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/dados_dia_activity_constraint"
+                app:layout_constraintTop_toBottomOf="@+id/dados_dia_activity_toolbar" />
+
+
+            <TextView
+                android:id="@+id/dados_dia_activity_string_total_vezes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dados_dia_activity_string_texto_total_vezes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.023"
+                app:layout_constraintStart_toEndOf="@+id/dados_dia_activity_string_texto_total_vezes"
+                app:layout_constraintTop_toTopOf="@+id/dados_dia_activity_string_texto_total_vezes"
+                tools:text="10"/>
+
+            <TextView
+                android:id="@+id/dados_dia_activity_string_texto_observacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/observacoes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dados_dia_activity_linear_layout"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/dados_dia_activity_string_observacoes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/dados_dia_activity_string_texto_observacoes"
+                app:layout_constraintTop_toBottomOf="@+id/dados_dia_activity_string_texto_observacoes"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="texto \n teste"/>
+<!--                tools:height="100dp"-->
+
+
+
+            <Button
+                android:id="@+id/dados_dia_activity_button_edit"
+                android:layout_width="135dp"
+                android:layout_height="55dp"
+                android:layout_margin="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_with_color"
+                android:text="@string/editar_button_dados_dia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dados_dia_activity_string_observacoes" />
+
+            <LinearLayout
+                android:id="@+id/dados_dia_activity_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dados_dia_activity_string_texto_total_vezes"></LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/dados_dia_activity_toolbar"
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/dados_dia_activity_toolbar_button_back"
+                android:layout_width="57dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/circle_border"
+                android:foreground="@drawable/ic_action_back"
+                android:paddingStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dados_dia_activity_toolbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dados_dia_activity_toolbar" />
+
+            <TextView
+                android:id="@+id/dados_dia_activity_toolbar_textView_day_selected"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="Detalha o dia selecionado pelo usuário"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/dados_dia_activity_toolbar"
+                app:layout_constraintEnd_toEndOf="@+id/dados_dia_activity_toolbar"
+                app:layout_constraintStart_toEndOf="@+id/dados_dia_activity_toolbar_button_back"
+                app:layout_constraintTop_toTopOf="@+id/dados_dia_activity_toolbar"
+                tools:text="25 de janeiro de 2024" />
+
+            <Button
+                android:id="@+id/dados_dia_activity_button_delete"
+                android:layout_width="135dp"
+                android:layout_height="55dp"
+                android:background="@drawable/border_with_color"
+                android:text="@string/apagar_button_dados_dia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dados_dia_activity_button_edit"
+                app:layout_constraintTop_toBottomOf="@+id/dados_dia_activity_string_observacoes" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+

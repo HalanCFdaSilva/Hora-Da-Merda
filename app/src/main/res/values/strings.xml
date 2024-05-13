@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HoraDaMerda</string>
+    <string name="editar_button_dados_dia">EDITAR</string>
+    <string name="apagar_button_dados_dia">DELETAR</string>
+    <string name="salvar">SALVAR</string>
+    <string name="total_de_vezes_dia">Quantidade de vezes no dia:</string>
+    <string name="estado_fezes">Estado das fezes:</string>
+    <string name="observacoes">Observações:</string>
+    <string name="hint_observacoes">Escreva aqui informações adicionais(OPCIONAL)</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="ano">Ano</string>
+    <string name="mes">Mês</string>
+
+
+</resources>

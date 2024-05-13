@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paper">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/salvar_dados_dia_layout_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/paper"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <TextView
+            android:id="@+id/salvar_dados_dia_textview_quantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:text="@string/total_de_vezes_dia"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/salvar_dados_dia_spinner_quantidade"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="05dp"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/salvar_dados_dia_textview_quantidade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toEndOf="@+id/salvar_dados_dia_textview_quantidade"
+            app:layout_constraintTop_toTopOf="@+id/salvar_dados_dia_textview_quantidade" />
+
+        <LinearLayout
+            android:id="@+id/salvar_dados_dia_layout_linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salvar_dados_dia_textview_quantidade" />
+
+        <TextView
+            android:id="@+id/salvar_dados_dia_string_observacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/observacoes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salvar_dados_dia_layout_linear"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/salvar_dados_dia_edit_text_observacao"
+            android:layout_width="0dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/hint_observacoes"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/salvar_dados_dia_string_observacao"
+            app:layout_constraintTop_toBottomOf="@+id/salvar_dados_dia_string_observacao"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/salvar_dados_dia_button_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/salvar"
+            app:layout_constraintEnd_toEndOf="@+id/salvar_dados_dia_edit_text_observacao"
+            app:layout_constraintStart_toStartOf="@+id/salvar_dados_dia_edit_text_observacao"
+            app:layout_constraintTop_toBottomOf="@+id/salvar_dados_dia_edit_text_observacao" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
